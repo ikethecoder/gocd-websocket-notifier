@@ -11,12 +11,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <go.version>15.1.0</go.version>
+        <go.version>19.1.0</go.version>
         <finalVersion>${project.version}</finalVersion>
         <finalName>${project.artifactId}-${project.version}</finalName>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-        <skipTests>false</skipTests>
+        <skipTests>true</skipTests>
     </properties>
 
     <dependencies>
@@ -128,7 +128,7 @@
                 </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
+                <version>3.0.0-M3</version>
                 <configuration>
                     <skipTests>${skipTests}</skipTests>
                 </configuration>
